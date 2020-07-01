@@ -1,0 +1,486 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 13.5px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: "Calibri";
+}
+
+.sidebar {
+    margin-top: 50px;
+    width: 20%;
+    background: #3F5161;
+    height: 800px;
+    align-items: center;
+    position: fixed;
+
+}
+
+/* kutulara a href verdim ama renkli gözükmesini istemiyorum o yüzden hepsini siyah yaptım*/
+a {color: rgb(0, 0, 0);}         /* Unvisited link  */
+a:visited {color: rgb(0, 0, 0);} /* Visited link    */
+a:hover {color: rgb(0, 0, 0);}   /* Mouse over link */
+a:active {color: rgb(0, 0, 0);}  /* Selected link   */
+
+
+/*********************************/
+
+.ust{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background: #2F3C48;
+}
+.ust .fa-bars{
+    margin-left: 18px;
+    margin-top: 18px;
+    transform: scale(1.3,1.3);
+    color: white;
+}
+.ust b{
+    color: white;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.ust .fa-calendar{
+    padding-left: 850px;
+    transform: scale(1.1,1.1);
+    padding-top: 15px;
+    color: white;
+}
+.ust .fa-newspaper{
+    padding-left: 60px;
+    transform: scale(1.1,1.1);
+    padding-top: 15px;
+    color: white;
+}
+.ust .fa-angle-down{
+    transform: scale(1.1,1.1);
+    padding-top: 16px;
+    color: white;
+}
+
+
+
+.content {
+    width: 100%;
+    margin-left: 20%;
+    height: 550px;
+    margin-top: 50px;
+}
+
+.content .contentustu{
+    width: 100%;
+    height: 150px;
+    background: white;
+}
+.content .contentustu .arama{
+    margin-top: 25px;
+    margin-left: 800px;
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    padding-left: 7px;
+}
+.content .contentt{
+    width: 100%;
+    height: 500px;
+    background: #FAFAFA;
+}
+
+.content .apimanagement{
+    width: 20%;
+    height: 150px;
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 10px;
+    color:#1f749e;
+}
+.content .apimanagement .yazi1{
+    font-size: 17px;
+}
+.content .apimanagement .fa-broadcast-tower{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .apimanagement p{
+    margin-top: 10px;
+    color:black;
+}
+.content .apimanagement .yazi{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .applicationautoscaler{
+    width: 20%;
+    height: 150px;
+    margin-left: 320px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+.content .applicationautoscaler .yazi2{
+    font-size: 17px;
+}
+.content .applicationautoscaler .fa-external-link-alt{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .applicationautoscaler p{
+    margin-top: 10px;
+    color:black;
+}
+.content .applicationautoscaler .yazi3{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+
+.content .applicationlogging{
+    width: 20%;
+    height: 150px;
+    margin-left: 610px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+.content .applicationlogging .yazi4{
+    font-size: 17px;
+}
+.content .applicationlogging .fa-chart-bar{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .applicationlogging p{
+    margin-top: 10px;
+    color:black;
+}
+.content .applicationlogging .yazi5{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .authorizaton{
+    width: 20%;
+    height: 150px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 170px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+.content .authorizaton .yazi6{
+    font-size: 17px;
+}
+.content .authorizaton .fa-user-lock{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .authorizaton p{
+    margin-top: 10px;
+    color:black;
+}
+.content .authorizaton .yazi7{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .businessrules{
+    width: 20%;
+    height: 150px;
+    margin-left: 320px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 170px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+.content .businessrules .yazi8{
+    font-size: 17px;
+}
+.content .businessrules .altpuzzle .fa-puzzle-piece{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .businessrules p{
+    margin-top: 10px;
+    color:black;
+}
+.content .businessrules .yazi9{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding: 12px;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .connectivity{
+    width: 20%;
+    height: 150px;
+    margin-left: 610px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 170px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+
+.content .connectivity .yazi10{
+    font-size: 17px;
+}
+.content .connectivity .altpuzzle2 .fa-puzzle-piece{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .connectivity p{
+    margin-top: 10px;
+    color:black;
+}
+.content .connectivity .yazi11{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .destination{
+    width: 20%;
+    height: 150px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 330px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+
+.content .destination .yazi12{
+    font-size: 17px;
+}
+.content .destination .altpuzzle3 .fa-puzzle-piece{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .destination p{
+    margin-top: 10px;
+    color:black;
+}
+.content .destination .yazi13{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .enterprisemessaging{
+    width: 20%;
+    height: 150px;
+    margin-left: 320px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 330px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+
+.content .enterprisemessaging .yazi14{
+    font-size: 17px;
+}
+.content .enterprisemessaging .altpuzzle4 .fa-puzzle-piece{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .enterprisemessaging p{
+    margin-top: 10px;
+    color:black;
+}
+.content .enterprisemessaging .yazi15{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+.content .featureflags{
+    width: 20%;
+    height: 150px;
+    margin-left: 610px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: white;
+    position: absolute;
+    justify-content: space-between;
+    margin-top: 330px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color:#1f749e;
+}
+
+.content .featureflags .yazi16{
+    font-size: 17px;
+}
+.content .featureflags .fa-toggle-on{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+}
+.content .featureflags p{
+    margin-top: 10px;
+    color:black;
+}
+.content .featureflags .yazi17{
+    color: black;
+    display: flex;
+    margin-top: 5%;
+    padding-left: 10px;
+    padding-right: 3px;
+}
+
+/*detaya giriyorum tek tek*/
+/*sidebar detay*/
+.sidebar .applications,.services,.saphana,.portal,.routes,.securitygroups,.events,.members,.usefullinks,.legalinformation{
+    padding:13px;
+    border: 1px solid grey;
+    color: white;
+    display: flex;
+}
+.sidebar .applications:hover,.services:hover,.saphana:hover,.portal:hover,.routes:hover,.securitygroups:hover,.events:hover,.members:hover,.usefullinks:hover,.legalinformation:hover{
+    cursor: pointer;
+    background:#496B8A;
+}
+.sidebar .usefullinks{
+    margin-top: 70px;
+}
+.sidebar span{
+    padding-left: 12px;
+}
+.sidebar .fa-chevron-down{
+    padding-left: 59%;
+}
+.sidebar .fa-chevron-right{
+    padding-left: 55%;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    padding-left: 40px;
+    color: white;
+}
+.sidebar ul li{
+    padding: 10px;
+}
+.sidebar ul li:hover{
+    background:#496B8A;
+}
+
+/*contentust*/
+.content .contentustu .links{
+    padding: 15px;
+    color: #1f749e;
+}
+
+.content .contentustu .icerik{
+    margin-left: 20px;
+}
+.content .contentustu .icerik b{
+    font-size:22px;
+    padding-left: 20px;
+}
+.content .contentustu .icerik .fa-puzzle-piece{
+    font-size: 20px;
+}
+.content .contentustu .icerik p{
+    margin-top: 10px;
+}
+
